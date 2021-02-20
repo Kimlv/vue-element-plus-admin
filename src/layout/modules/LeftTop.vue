@@ -12,6 +12,27 @@
       />
       <sider :layout="layout" mode="vertical" />
     </div>
+    <!-- Classic -->
+
+    <!-- Top -->
+    <div v-if="layout !== 'Classic'" class="sidebar__wrap--Top">
+      <div>
+        <logo
+          v-if="showLogo"
+          :collapsed="collapsed"
+        />
+      </div>
+      <div v-if="layout === 'Top'" class="sidebar__item--Top">
+        <sider :layout="layout" mode="horizontal" />
+      </div>
+      <div>
+        <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
+          <screenfull v-if="showScreenfull" class="hover-container screenfull-container" />
+          <user-info v-if="showUserInfo" class="hover-container user-container" />
+        </div>
+      </div>
+    </div>
+    <!-- Top -->
 
     <div
       class="main__wrap"
@@ -35,7 +56,7 @@
           }"
         >
           <div
-            v-if="showNavbar"
+            v-if="showNavbar && layout !== 'Top'"
             class="navbar__wrap"
           >
             <hamburger
@@ -46,10 +67,10 @@
               @toggleClick="setCollapsed"
             />
             <breadcrumb v-if="showBreadcrumb" id="breadcrumb-container" />
-            <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
+            <!-- <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
               <screenfull v-if="showScreenfull" class="hover-container screenfull-container" />
               <user-info v-if="showUserInfo" class="hover-container user-container" />
-            </div>
+            </div> -->
           </div>
           <div
             v-if="showTags"
@@ -73,7 +94,7 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
-import { appStore } from '_@/store/modules/app'
+import { appStore } from '@/store/modules/app'
 
 import AppMain from '../components/AppMain.vue'
 import TagsView from '_c/TagsView/index.vue'
@@ -87,7 +108,7 @@ import UserInfo from '_c/UserInfo/index.vue'
 import Setting from '_c/Setting/index.vue'
 import Backtop from '_c/Backtop/index.vue'
 export default defineComponent({
-  name: 'Classic',
+  name: 'LeftTop',
   components: {
     Sider,
     Hamburger,

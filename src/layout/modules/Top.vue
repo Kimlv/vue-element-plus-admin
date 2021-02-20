@@ -1,28 +1,14 @@
 <template>
   <div :class="classObj" class="app__wrap">
-    <!-- Classic -->
-    <div
-      id="sidebar__wrap"
-      class="sidebar__wrap"
-      :class="{'sidebar__wrap--collapsed': collapsed}"
-    >
-      <logo
-        v-if="showLogo && layout === 'Classic'"
-        :collapsed="collapsed"
-      />
-      <sider :layout="layout" mode="vertical" />
-    </div>
-    <!-- Classic -->
-
     <!-- Top -->
-    <div v-if="layout !== 'Classic'" class="sidebar__wrap--Top">
+    <div class="sidebar__wrap--Top">
       <div>
         <logo
           v-if="showLogo"
           :collapsed="collapsed"
         />
       </div>
-      <div v-if="layout === 'Top'" class="sidebar__item--Top">
+      <div id="sidebar__wrap" class="sidebar__item--Top">
         <sider :layout="layout" mode="horizontal" />
       </div>
       <div>
@@ -55,23 +41,22 @@
             'header__wrap--collapsed': fixedHeader && collapsed
           }"
         >
-          <div
+          <!-- <div
             v-if="showNavbar && layout !== 'Top'"
             class="navbar__wrap"
           >
             <hamburger
               v-if="showHamburger"
-              id="hamburger-container"
               :collapsed="collapsed"
               class="hover-container"
               @toggleClick="setCollapsed"
             />
-            <breadcrumb v-if="showBreadcrumb" id="breadcrumb-container" />
-            <!-- <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
+            <breadcrumb v-if="showBreadcrumb" />
+            <div v-if="showScreenfull || showUserInfo" class="navbar__wrap--right">
               <screenfull v-if="showScreenfull" class="hover-container screenfull-container" />
               <user-info v-if="showUserInfo" class="hover-container user-container" />
-            </div> -->
-          </div>
+            </div>
+          </div> -->
           <div
             v-if="showTags"
             id="tag-container"
@@ -94,25 +79,25 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
-import { appStore } from '_@/store/modules/app'
+import { appStore } from '@/store/modules/app'
 
 import AppMain from '../components/AppMain.vue'
 import TagsView from '_c/TagsView/index.vue'
 import Logo from '_c/Logo/index.vue'
 import Sider from '_c/Sider/index.vue'
-import Hamburger from '_c/Hamburger/index.vue'
-import Breadcrumb from '_c/Breadcrumb/index.vue'
+// import Hamburger from '_c/Hamburger/index.vue'
+// import Breadcrumb from '_c/Breadcrumb/index.vue'
 import Screenfull from '_c/Screenfull/index.vue'
 import UserInfo from '_c/UserInfo/index.vue'
 
 import Setting from '_c/Setting/index.vue'
 import Backtop from '_c/Backtop/index.vue'
 export default defineComponent({
-  name: 'LeftTop',
+  name: 'Top',
   components: {
     Sider,
-    Hamburger,
-    Breadcrumb,
+    // Hamburger,
+    // Breadcrumb,
     Screenfull,
     UserInfo,
     AppMain,

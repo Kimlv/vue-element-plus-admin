@@ -21,11 +21,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { resetRouter } from '_@/router'
+import { resetRouter } from '@/router'
 import wsCache from '@/cache'
 import { useRouter } from 'vue-router'
-import { tagsViewStore } from '_@/store/modules/tagsView'
-import { appStore } from '_@/store/modules/app'
+import { tagsViewStore } from '@/store/modules/tagsView'
+import { appStore } from '@/store/modules/app'
 export default defineComponent({
   name: 'UserInfo',
   setup() {

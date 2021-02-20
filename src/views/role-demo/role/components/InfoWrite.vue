@@ -40,8 +40,8 @@
 import path from 'path'
 import { defineComponent, PropType, ref, reactive, nextTick, unref } from 'vue'
 import { setRoleApi, getRoleDetApi } from '../api'
-import { asyncRouterMap } from '_@/router'
-import { AppRouteRecordRaw } from '_@/router/types'
+import { asyncRouterMap } from '@/router'
+import { AppRouteRecordRaw } from '@/router/types'
 import { isExternal } from '@/utils/validate'
 import { Message } from '_c/Message'
 

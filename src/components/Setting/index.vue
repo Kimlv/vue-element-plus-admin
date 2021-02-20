@@ -103,7 +103,7 @@
 
 <script lang="ts">
 import { defineComponent, computed, ref } from 'vue'
-import { appStore } from '_@/store/modules/app'
+import { appStore } from '@/store/modules/app'
 export default defineComponent({
   name: 'Setting',
   setup() {

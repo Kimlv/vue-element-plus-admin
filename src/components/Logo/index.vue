@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent, ref, watch, PropType, computed } from 'vue'
-import { appStore } from '_@/store/modules/app'
+import { appStore } from '@/store/modules/app'
 
 export default defineComponent({
   name: 'Logo',

@@ -26,8 +26,8 @@
 <script lang="ts">
 import { defineComponent, computed, PropType } from 'vue'
 import { useRouter } from 'vue-router'
-import { permissionStore } from '_@/store/modules/permission'
-import { appStore } from '_@/store/modules/app'
+import { permissionStore } from '@/store/modules/permission'
+import { appStore } from '@/store/modules/app'
 import type { RouteRecordRaw } from 'vue-router'
 import SiderItem from './SiderItem.vue'
 import variables from '@/styles/variables.less'

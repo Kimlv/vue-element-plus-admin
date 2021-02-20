@@ -4,7 +4,7 @@ import NProgress from 'nprogress' // 引入进度条
 
 import 'nprogress/nprogress.css' // 进度条样式
 
-import { appStore } from '_@/store/modules/app'
+import { appStore } from '@/store/modules/app'
 
 import wsCache from '@/cache'
 
@@ -12,7 +12,7 @@ import getPageTitle from '@/utils/get-page-title'
 
 NProgress.configure({ showSpinner: false }) // NProgress configuration
 
-import { permissionStore } from '_@/store/modules/permission'
+import { permissionStore } from '@/store/modules/permission'
 
 import type { RouteRecordRaw } from 'vue-router'
 

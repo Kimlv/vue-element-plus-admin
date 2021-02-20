@@ -1,8 +1,8 @@
 import store from '../index'
-import router from '_@/router'
+import router from '@/router'
 import { VuexModule, getModule, Module, Mutation, Action } from 'vuex-module-decorators'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
-import { getRoute } from '_@/router/utils'
+import { getRoute } from '@/router/utils'
 
 export const PAGE_LAYOUT_KEY = '__PAGE_LAYOUT__'
 
