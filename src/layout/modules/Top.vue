@@ -68,12 +68,6 @@
         <app-main />
       </el-scrollbar>
     </div>
-
-    <!-- setting -->
-    <setting />
-    <!-- setting -->
-
-    <backtop v-if="showBackTop" />
   </div>
 </template>
 
@@ -89,9 +83,6 @@ import Sider from '_c/Sider/index.vue'
 // import Breadcrumb from '_c/Breadcrumb/index.vue'
 import Screenfull from '_c/Screenfull/index.vue'
 import UserInfo from '_c/UserInfo/index.vue'
-
-import Setting from '_c/Setting/index.vue'
-import Backtop from '_c/Backtop/index.vue'
 export default defineComponent({
   name: 'Top',
   components: {
@@ -102,9 +93,7 @@ export default defineComponent({
     UserInfo,
     AppMain,
     TagsView,
-    Logo,
-    Setting,
-    Backtop
+    Logo
   },
   setup() {
     const layout = computed(() => appStore.layout)
@@ -119,7 +108,6 @@ export default defineComponent({
     // const fixedNavbar = computed(() => appStore.fixedNavbar)
     // const fixedTags = computed(() => appStore.fixedTags)
     const fixedHeader = computed(() => appStore.fixedHeader)
-    const showBackTop = computed(() => appStore.showBackTop)
 
     const classObj = computed(() => {
       const obj = {}
@@ -145,8 +133,7 @@ export default defineComponent({
       fixedHeader,
       // fixedNavbar,
       // fixedTags,
-      setCollapsed,
-      showBackTop
+      setCollapsed
     }
   }
 })

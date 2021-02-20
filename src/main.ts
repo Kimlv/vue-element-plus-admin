@@ -25,10 +25,6 @@ import { setupElement } from '@/libs/element' // element UI
 
 import { setupGlobCom } from '@/components' // 全局公用组件
 
-import { setupDirectives } from '@/directives' // 自定义指令
-
-import { mockXHR } from '../mock'
-
 import '@/styles/reset.css' // 重置不同浏览器之间的标签默认样式
 
 import '@/styles/index.less'
@@ -42,10 +38,6 @@ setupStore(app) // 引入状态管理
 setupElement(app) // 引入element组件
 
 setupGlobCom(app) // 注册全局公用组件
-
-setupDirectives(app) // 注册全局自定义指令
-
-mockXHR() // mock注册
 
 router.isReady().then(() => {
   app.mount('#app')

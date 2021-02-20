@@ -65,8 +65,6 @@ import { appStore } from '@/store/modules/app'
 import wsCache from '@/cache'
 import { ElNotification } from 'element-plus'
 
-import { loginApi, getRoleDetApi } from './api'
-
 interface FormModule {
   userName: string,
   passWord: string
@@ -105,26 +103,14 @@ export default defineComponent({
       try {
         formWrap.validate(async(valid: boolean) => {
           if (valid) {
-            // 模拟登录接口之后返回角色信息
-            const res = await loginApi({ data: form })
-            if (res) {
-              // 获取权限信息
-              const role = await getRoleDetApi({
-                params: {
-                  id: res.data.roleId
-                }
+            wsCache.set(appStore.userInfo, form)
+            permissionStore.GenerateRoutes().then(() => {
+              permissionStore.addRouters.forEach(async(route: RouteRecordRaw) => {
+                await addRoute(route.name!, route) // 动态添加可访问路由表
               })
-              if (role) {
-                wsCache.set(appStore.userInfo, Object.assign(form, role.data))
-                permissionStore.GenerateRoutes().then(() => {
-                  permissionStore.addRouters.forEach(async(route: RouteRecordRaw) => {
-                    await addRoute(route.name!, route) // 动态添加可访问路由表
-                  })
-                  permissionStore.SetIsAddRouters(true)
-                  push({ path: redirect.value || '/' })
-                })
-              }
-            }
+              permissionStore.SetIsAddRouters(true)
+              push({ path: redirect.value || '/' })
+            })
           } else {
             console.log('error submit!!')
             return false
