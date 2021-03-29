@@ -12,7 +12,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'echarts',
-        component: 'pages/index/views/components-demo/echarts/index',
+        component: 'views/components-demo/echarts/index',
         name: 'EchartsDemo',
         meta: {
           title: '图表'
@@ -20,7 +20,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'preview',
-        component: 'pages/index/views/components-demo/preview/index',
+        component: 'views/components-demo/preview/index',
         name: 'PreviewDemo',
         meta: {
           title: '图片预览'
@@ -28,7 +28,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'button',
-        component: 'pages/index/views/components-demo/button/index',
+        component: 'views/components-demo/button/index',
         name: 'ButtonDemo',
         meta: {
           title: '按钮'
@@ -36,7 +36,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'message',
-        component: 'pages/index/views/components-demo/message/index',
+        component: 'views/components-demo/message/index',
         name: 'MessageDemo',
         meta: {
           title: '消息提示'
@@ -44,7 +44,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'count-to',
-        component: 'pages/index/views/components-demo/count-to/index',
+        component: 'views/components-demo/count-to/index',
         name: 'CountToDemo',
         meta: {
           title: '数字动画'
@@ -52,7 +52,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'search',
-        component: 'pages/index/views/components-demo/search/index',
+        component: 'views/components-demo/search/index',
         name: 'SearchDemo',
         meta: {
           title: '查询'
@@ -60,7 +60,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'editor',
-        component: 'pages/index/views/components-demo/editor/index',
+        component: 'views/components-demo/editor/index',
         name: 'EditorDemo',
         meta: {
           title: '富文本编辑器'
@@ -68,7 +68,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'markdown',
-        component: 'pages/index/views/components-demo/markdown/index',
+        component: 'views/components-demo/markdown/index',
         name: 'MarkdownDemo',
         meta: {
           title: 'markdown编辑器'
@@ -76,7 +76,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'dialog',
-        component: 'pages/index/views/components-demo/dialog/index',
+        component: 'views/components-demo/dialog/index',
         name: 'DialogDemo',
         meta: {
           title: '弹窗'
@@ -84,7 +84,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'more',
-        component: 'pages/index/views/components-demo/more/index',
+        component: 'views/components-demo/more/index',
         name: 'MoreDemo',
         meta: {
           title: '显示更多'
@@ -92,7 +92,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'detail',
-        component: 'pages/index/views/components-demo/detail/index',
+        component: 'views/components-demo/detail/index',
         name: 'DetailDemo',
         meta: {
           title: '详情组件'
@@ -100,7 +100,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'qrcode',
-        component: 'pages/index/views/components-demo/qrcode/index',
+        component: 'views/components-demo/qrcode/index',
         name: 'QrcodeDemo',
         meta: {
           title: '二维码组件'
@@ -108,7 +108,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'avatars',
-        component: 'pages/index/views/components-demo/avatars/index',
+        component: 'views/components-demo/avatars/index',
         name: 'AvatarsDemo',
         meta: {
           title: '头像组'
@@ -116,7 +116,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'highlight',
-        component: 'pages/index/views/components-demo/highlight/index',
+        component: 'views/components-demo/highlight/index',
         name: 'HighlightDemo',
         meta: {
           title: '文字高亮'
@@ -137,7 +137,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'basic-table',
-        component: 'pages/index/views/table-demo/basic-table/index',
+        component: 'views/table-demo/basic-table/index',
         name: 'BasicTable',
         meta: {
           title: '基础表格'
@@ -145,7 +145,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'page-table',
-        component: 'pages/index/views/table-demo/page-table/index',
+        component: 'views/table-demo/page-table/index',
         name: 'PageTable',
         meta: {
           title: '分页表格'
@@ -153,7 +153,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'stripe-table',
-        component: 'pages/index/views/table-demo/stripe-table/index',
+        component: 'views/table-demo/stripe-table/index',
         name: 'StripeTable',
         meta: {
           title: '带斑马纹表格'
@@ -161,7 +161,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'border-table',
-        component: 'pages/index/views/table-demo/border-table/index',
+        component: 'views/table-demo/border-table/index',
         name: 'BorderTable',
         meta: {
           title: '带边框表格'
@@ -169,7 +169,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'state-table',
-        component: 'pages/index/views/table-demo/state-table/index',
+        component: 'views/table-demo/state-table/index',
         name: 'StateTable',
         meta: {
           title: '带状态表格'
@@ -177,7 +177,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'fixed-header',
-        component: 'pages/index/views/table-demo/fixed-header/index',
+        component: 'views/table-demo/fixed-header/index',
         name: 'FixedHeader',
         meta: {
           title: '固定表头'
@@ -185,7 +185,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'fixed-column',
-        component: 'pages/index/views/table-demo/fixed-column/index',
+        component: 'views/table-demo/fixed-column/index',
         name: 'FixedColumn',
         meta: {
           title: '固定列'
@@ -193,7 +193,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'fixed-column-header',
-        component: 'pages/index/views/table-demo/fixed-column-header/index',
+        component: 'views/table-demo/fixed-column-header/index',
         name: 'FixedColumnHeader',
         meta: {
           title: '固定列和表头'
@@ -201,7 +201,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'fluid-height',
-        component: 'pages/index/views/table-demo/fluid-height/index',
+        component: 'views/table-demo/fluid-height/index',
         name: 'FluidHeight',
         meta: {
           title: '流体高度'
@@ -209,7 +209,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'multi-header',
-        component: 'pages/index/views/table-demo/multi-header/index',
+        component: 'views/table-demo/multi-header/index',
         name: 'MultiHeader',
         meta: {
           title: '多级表头'
@@ -217,7 +217,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'single-choice',
-        component: 'pages/index/views/table-demo/single-choice/index',
+        component: 'views/table-demo/single-choice/index',
         name: 'SingleChoice',
         meta: {
           title: '单选'
@@ -225,7 +225,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'multiple-choice',
-        component: 'pages/index/views/table-demo/multiple-choice/index',
+        component: 'views/table-demo/multiple-choice/index',
         name: 'MultipleChoice',
         meta: {
           title: '多选'
@@ -233,7 +233,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'sort-table',
-        component: 'pages/index/views/table-demo/sort-table/index',
+        component: 'views/table-demo/sort-table/index',
         name: 'SortTable',
         meta: {
           title: '排序'
@@ -241,7 +241,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'screen-table',
-        component: 'pages/index/views/table-demo/screen-table/index',
+        component: 'views/table-demo/screen-table/index',
         name: 'ScreenTable',
         meta: {
           title: '筛选'
@@ -249,7 +249,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'expand-row',
-        component: 'pages/index/views/table-demo/expand-row/index',
+        component: 'views/table-demo/expand-row/index',
         name: 'ExpandRow',
         meta: {
           title: '展开行'
@@ -257,7 +257,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'tree-and-load',
-        component: 'pages/index/views/table-demo/tree-and-load/index',
+        component: 'views/table-demo/tree-and-load/index',
         name: 'TreeAndLoad',
         meta: {
           title: '树形数据与懒加载'
@@ -265,7 +265,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'custom-header',
-        component: 'pages/index/views/table-demo/custom-header/index',
+        component: 'views/table-demo/custom-header/index',
         name: 'CustomHeader',
         meta: {
           title: '自定义表头'
@@ -273,7 +273,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'total-table',
-        component: 'pages/index/views/table-demo/total-table/index',
+        component: 'views/table-demo/total-table/index',
         name: 'TotalTable',
         meta: {
           title: '表尾合计行'
@@ -281,7 +281,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'merge-table',
-        component: 'pages/index/views/table-demo/merge-table/index',
+        component: 'views/table-demo/merge-table/index',
         name: 'MergeTable',
         meta: {
           title: '合并行或列'
@@ -289,7 +289,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'custom-index',
-        component: 'pages/index/views/table-demo/custom-index/index',
+        component: 'views/table-demo/custom-index/index',
         name: 'CustomIndex',
         meta: {
           title: '自定义索引'
@@ -310,7 +310,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'clipboard',
-        component: 'pages/index/views/directives-demo/clipboard/index',
+        component: 'views/directives-demo/clipboard/index',
         name: 'ClipboardDemo',
         meta: {
           title: 'Clipboard'
@@ -331,7 +331,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'watermark',
-        component: 'pages/index/views/hooks-demo/useWatermark/index',
+        component: 'views/hooks-demo/useWatermark/index',
         name: 'UseWatermarkDemo',
         meta: {
           title: 'UseWaterMark'
@@ -339,7 +339,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'useScrollTo',
-        component: 'pages/index/views/hooks-demo/useScrollTo/index',
+        component: 'views/hooks-demo/useScrollTo/index',
         name: 'UseScrollToDemo',
         meta: {
           title: 'UseScrollTo'
@@ -358,7 +358,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'index',
-        component: 'pages/index/views/icons/index',
+        component: 'views/icons/index',
         name: 'Icons',
         meta: {
           title: '图标',
@@ -399,7 +399,7 @@ export const checkedRoleNodes = [
               {
                 path: 'menu1-1-1',
                 name: 'Menu111Demo',
-                component: 'pages/index/views/level/Menu111',
+                component: 'views/level/Menu111',
                 meta: {
                   title: 'Menu1-1-1'
                 }
@@ -409,7 +409,7 @@ export const checkedRoleNodes = [
           {
             path: 'menu1-2',
             name: 'Menu12Demo',
-            component: 'pages/index/views/level/Menu12',
+            component: 'views/level/Menu12',
             meta: {
               title: 'Menu1-2'
             }
@@ -419,7 +419,7 @@ export const checkedRoleNodes = [
       {
         path: 'menu2',
         name: 'Menu2Demo',
-        component: 'pages/index/views/level/Menu2',
+        component: 'views/level/Menu2',
         meta: {
           title: 'Menu2'
         }
@@ -439,7 +439,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'example-dialog',
-        component: 'pages/index/views/example-demo/example-dialog/index',
+        component: 'views/example-demo/example-dialog/index',
         name: 'ExampleDialog',
         meta: {
           title: '列表综合实例-弹窗'
@@ -447,7 +447,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'example-page',
-        component: 'pages/index/views/example-demo/example-page/index',
+        component: 'views/example-demo/example-page/index',
         name: 'ExamplePage',
         meta: {
           title: '列表综合实例-页面'
@@ -455,7 +455,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'example-add',
-        component: 'pages/index/views/example-demo/example-page/example-add',
+        component: 'views/example-demo/example-page/example-add',
         name: 'ExampleAdd',
         meta: {
           title: '列表综合实例-新增',
@@ -468,7 +468,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'example-edit',
-        component: 'pages/index/views/example-demo/example-page/example-edit',
+        component: 'views/example-demo/example-page/example-edit',
         name: 'ExampleEdit',
         meta: {
           title: '列表综合实例-编辑',
@@ -481,7 +481,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'example-detail',
-        component: 'pages/index/views/example-demo/example-page/example-detail',
+        component: 'views/example-demo/example-page/example-detail',
         name: 'ExampleDetail',
         meta: {
           title: '列表综合实例-详情',
@@ -507,7 +507,7 @@ export const checkedRoleNodes = [
     children: [
       {
         path: 'user',
-        component: 'pages/index/views/role-demo/user/index',
+        component: 'views/role-demo/user/index',
         name: 'User',
         meta: {
           title: '用户管理'
@@ -515,7 +515,7 @@ export const checkedRoleNodes = [
       },
       {
         path: 'role',
-        component: 'pages/index/views/role-demo/role/index',
+        component: 'views/role-demo/role/index',
         name: 'Role',
         meta: {
           title: '角色管理'
