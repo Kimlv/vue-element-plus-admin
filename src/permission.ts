@@ -28,8 +28,8 @@ router.beforeEach((to, from, next) => {
         return
       }
       permissionStore.GenerateRoutes().then(() => {
-        permissionStore.addRouters.forEach(async(route: RouteRecordRaw) => {
-          await router.addRoute(route.name!, route) // 动态添加可访问路由表
+        permissionStore.addRouters.forEach((route: RouteRecordRaw) => {
+          router.addRoute(route) // 动态添加可访问路由表
         })
         const redirectPath = (from.query.redirect || to.path) as string
         const redirect = decodeURIComponent(redirectPath)

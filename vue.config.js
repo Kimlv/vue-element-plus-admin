@@ -123,16 +123,14 @@ const vueConfig = {
 
       config.optimization.runtimeChunk('single')
 
-      Object.keys(entryPages).forEach((page) => {
-        // 预加载
-        config.plugin(`preload-${page}`).tap(() => [{
-          rel: 'preload',
-          fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
-          include: 'initial'
-        }])
-
-        config.plugins.delete(`prefetch-${page}`)
-      })
+      // 预加载
+      config.plugin('preload').tap(() => [{
+        rel: 'preload',
+        fileBlacklist: [/\.map$/, /hot-update\.js$/, /runtime\..*\.js$/],
+        include: 'initial'
+      }])
+      
+      config.plugins.delete('prefetch')
     })
   },
   configureWebpack: {
